@@ -40,9 +40,8 @@ export default (environment = 'development') => ({
     uuid: 'c4bf0be4-7c15-11e4-a7b8-00144feabdc0',
 
     topper: {
-      square: 'http://ft-ig-images-prod.s3-website-eu-west-1.amazonaws.com/v1/8482823683-h95ba.jpg',
-      wide: 'http://ft-ig-images-prod.s3-website-eu-west-1.amazonaws.com/v1/8482823684-gwq3v.jpg',
-      master: 'http://ft-ig-images-prod.s3-website-eu-west-1.amazonaws.com/v1/8482823683-is5st.jpg',
+      master:
+        'https://s3-eu-west-1.amazonaws.com/ft-ig-content-prod/v2/ft-interactive/gas-pipelines/video/pipeline.mp4',
     },
 
     // You can also provide a URL

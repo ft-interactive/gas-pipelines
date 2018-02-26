@@ -45,12 +45,9 @@
 
   <div class="topper__background" data-textbox-background="paper"></div>
   <figure class="topper__visual">
-    <picture class="topper__picture">
-        <source media="(max-width: 490px)" srcset="{{ mainImage.topper.square }} 490w">
-        <source media="(max-width: 1220px)" srcset="{{ mainImage.topper.master }} 1220w">
-        <source media="(min-width: 1220px)" srcset="{{ mainImage.topper.wide }} 1440w">
-      <img alt="" class="topper__image" src="{{ mainImage.topper.master }}">
-    </picture>
+    <video autoplay class="topper__video">
+      <source src="{{ mainImage.topper.master }}" type="video/mp4">
+    </video>
     <figcaption class="topper__image-credit">© {{mainImage.credit}}</figcaption>
   </figure>
 </div>
