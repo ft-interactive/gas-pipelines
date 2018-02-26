@@ -1,11 +1,14 @@
-export default (environment = 'development') => ({ // eslint-disable-line
+export default (environment = 'development') => ({
+  // eslint-disable-line
 
   // link file UUID
-  id: '$uuid',
+  id: '',
 
   // canonical URL of the published page
-  // "$url" get filled in by the ./configure script
-  url: '$url',
+  //  get filled in by the ./configure script
+  url: '',
+
+  googleDocId: '1VvOXK0_2FnTcXt-wUB0qFulUkxXl8IWbce57sGGp6OQ',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
@@ -14,8 +17,9 @@ export default (environment = 'development') => ({ // eslint-disable-line
   headline: 'Politics and the English Language',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Political language is designed to make lies sound truthful' +
-           'and murder respectable, and to give an appearance of solidity to pure wind',
+  summary:
+    'Political language is designed to make lies sound truthful' +
+    'and murder respectable, and to give an appearance of solidity to pure wind',
 
   topic: {
     name: 'Starter Kit',
@@ -41,10 +45,7 @@ export default (environment = 'development') => ({ // eslint-disable-line
 
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
-  byline: [
-    { name: 'Author One', url: '/foo/bar' },
-    { name: 'Author Two' },
-  ],
+  byline: [{ name: 'Author One', url: '/foo/bar' }, { name: 'Author Two' }],
 
   // Appears in the HTML <title>
   title: '',
@@ -54,7 +55,7 @@ export default (environment = 'development') => ({ // eslint-disable-line
 
   /*
   TODO: Select Twitter card type -
-        "summary" or "summary_large_image"
+        summary or summary_large_image
 
         Twitter card docs:
         https://dev.twitter.com/cards/markup
@@ -78,7 +79,7 @@ export default (environment = 'development') => ({ // eslint-disable-line
   // twitterRelatedAccounts: ['authors_account_here', 'ftdata'],
 
   // Fill out the Facebook/Twitter metadata sections below if you want to
-  // override the "General social" options above
+  // override the General social options above
 
   // TWITTER METADATA (for Twitter cards)
   // twitterImage: '',
@@ -101,7 +102,6 @@ export default (environment = 'development') => ({ // eslint-disable-line
   },
 
   tracking: {
-
     /*
 
     Microsite Name
@@ -113,11 +113,10 @@ export default (environment = 'development') => ({ // eslint-disable-line
     Also used for pages that do not have a UUID for whatever reason
     */
     // micrositeName: '',
-
     /*
     Product name
 
-    This will usually default to "IG"
+    This will usually default to IG
     however another value may be needed
     */
     // product: '',
