@@ -1,0 +1,56 @@
+<div class="topper topper--full-bleed-offset" data-overlap-observed="0">
+  <div class="topper__content" data-textbox-background="paper">
+    <div class="topper__tags">
+      <div class="topper__primary-theme">
+        <a href="{{ topic.url }}" class="n-content-tag n-content-tag--medium n-content-tag--brand" data-trackable="primary-brand" aria-label="part of the {{ topic.name }} section">{{ topic.name }}</a>
+      </div>
+    </div>
+    <h1 class="topper__headline topper__headline--large" data-trackable="header">
+      <span class="article-classifier__gap">{{ headline | md(true) }}</span>
+    </h1>
+    <meta itemprop="dateModified" content="{{ publishedDate | isotime }}">
+    <div class="topper__standfirst">
+      {{ summary | md(true) }}
+      {% if relatedArticle %}
+      <a href="{{ relatedArticle.url }}" class="o-typography-link">{{ relatedArticle.text }}</a>
+      {% endif %}
+    </div>
+
+    {% if flags.shareButtons %}
+      {% include "includes/share.html" %}
+    {% endif %}
+
+    <p>
+      {%- if publishedDate -%}
+      <time data-o-component="o-date" class="o-date o-typography-timestamp" datetime="{{ publishedDate | isotime }}">{{ publishedDate | ftdate }}</time>
+      {%- endif -%}
+      {%- if byline -%}
+      &#32;<span class="article__byline">by&nbsp;
+      {%- if byline.push -%}
+        {%- for author in byline -%}
+          {{ " and " if not loop.first and loop.last else (", " if not loop.first else "") }}
+          {%- if author.url -%}
+            <a href="{{ author.url }}" class="o-typography-topic" itemprop="author">{{ author.name }}</a>
+          {%- else -%}
+            {{ author.name }}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- else -%}
+        {{ byline | md(true) }}
+      {%- endif -%}
+      </span>
+      {%- endif -%}
+    </p>
+  </div>
+
+  <div class="topper__background" data-textbox-background="paper"></div>
+  <figure class="topper__visual">
+    <picture class="topper__picture">
+        <source media="(max-width: 490px)" srcset="{{ mainImage.topper.square }} 490w">
+        <source media="(max-width: 1220px)" srcset="{{ mainImage.topper.master }} 1220w">
+        <source media="(min-width: 1220px)" srcset="{{ mainImage.topper.wide }} 1440w">
+      <img alt="" class="topper__image" src="{{ mainImage.topper.master }}">
+    </picture>
+    <figcaption class="topper__image-credit">© {{mainImage.credit}}</figcaption>
+  </figure>
+</div>

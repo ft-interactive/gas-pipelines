@@ -1,0 +1,192 @@
+@import 'o-grid/main';
+@import 'o-icons/main';
+@import 'o-colors/main';
+@import 'o-typography/main';
+@import '_helpers';
+@import 'themes/_full-bleed-offset';
+
+.topper {
+  //Basic topper uses the same grid columns as an article, so things can line up.
+  @include articleGrid();
+  margin-bottom: 20px;
+
+  @include oGridRespondTo($until: S) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include oGridRespondTo(L) {
+    -ms-grid-rows: 20px min-content 60px min-content 20px;
+    grid-template-rows: 20px min-content 60px min-content 20px;
+  }
+
+  [data-textbox-background~='paper'] {
+    background-color: #fff1e5;
+  }
+}
+
+.topper--centered {
+  @include articleGridCentered();
+  .topper__read-next {
+    display: none;
+  }
+}
+
+.topper--basic {
+  @include oGridRespondTo($until: L) {
+    margin-top: 10px;
+  }
+}
+
+//Default theme;
+
+.topper__content {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 3;
+  grid-row: 2 / span 4;
+  grid-column: 3;
+  position: relative;
+  z-index: 1;
+}
+
+.topper__visual {
+  margin: 0;
+}
+
+.topper__visual,
+.topper__background {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-row: 1 / span 5;
+  grid-column: 1 / span 6;
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  position: relative;
+}
+
+.topper__headline {
+  @include oTypographyHeadline();
+
+  &--large {
+    @include oTypographyHeadlineLarge();
+
+    position: relative; //so it appears above the full width background
+  }
+}
+
+.topper__standfirst {
+  @include oTypographyStandfirst();
+  margin-bottom: 20px;
+  opacity: 0.8;
+
+  a {
+    @include oTypographySize(0);
+  }
+
+  > p {
+    margin: 0;
+  }
+}
+
+.topper__summary {
+  @include oTypographySans(1);
+  > ul {
+    padding: 0 oTypographySpacingSize(5);
+  }
+
+  > ul > li {
+    margin: oTypographySpacingSize(2) 0;
+  }
+  &--body {
+    h2 {
+      @include oTypographySansBold(0);
+      margin: 5px 0 0;
+    }
+
+    ul {
+      @include oTypographyList;
+      @include oTypographyListUnordered();
+      margin: 0;
+
+      li:first-child {
+        margin-top: 0;
+      }
+      li {
+        @include oTypographySans(1);
+        @include oTypographyMargin(2, 0);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.topper__image-credit {
+  color: oColorsGetPaletteColor('white');
+  @include oTypographySans(-2);
+  position: absolute;
+  right: 12px;
+  bottom: 2px;
+  text-shadow: 1px 1px 1px oColorsGetPaletteColor('slate');
+  .topper--full-bleed-offset & {
+    @include oGridRespondTo($from: M, $until: XL) {
+      bottom: auto;
+      top: 0;
+    }
+  }
+}
+
+//IE9 support
+.topper__image {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+@supports (object-fit: cover) {
+  .topper__image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.topper__brand {
+  @include oTypographySans(0);
+  margin-right: 4px;
+  -webkit-font-smoothing: antialiased;
+  @include oGridRespondTo($until: S) {
+    display: block;
+  }
+}
+
+.topper__columnist {
+  @include oTypographyMargin($top: 4);
+  text-transform: uppercase;
+}
+
+.topper__columnist-name {
+  vertical-align: middle;
+}
+
+.topper__tags {
+  display: flex;
+  padding-bottom: 5px;
+
+  a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    &:hover {
+      color: #45413e;
+    }
+  }
+}

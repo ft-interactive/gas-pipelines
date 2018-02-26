@@ -11,9 +11,6 @@ body {
 
 .article {
   &-head {
-    margin-top: 18px;
-    margin-bottom: 0;
-
     .article__share {
       margin-bottom: 15px;
     }
@@ -37,7 +34,6 @@ body {
   }
 }
 
-
 .graphic {
   display: block;
   max-width: 100%;
@@ -60,5 +56,4 @@ body {
   &-b-1 {
     max-width: 700px;
   }
-
 }
