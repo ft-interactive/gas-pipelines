@@ -68,6 +68,7 @@
   top: 0;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .topper__headline {
@@ -191,8 +192,23 @@
   }
 }
 
-// video
+// Video support
 
-video {
-  object-fit: cover;
+.topper__video {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+@supports (object-fit: cover) {
+  .topper__video {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    @include oGridRespondTo(L) {
+      height: 600px;
+      max-height: 600px;
+    }
+  }
 }

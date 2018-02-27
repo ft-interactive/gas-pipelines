@@ -75,14 +75,12 @@
     grid-template-columns: 40px 40px 20px minmax(500px, 700px) 40px minmax(0, auto) 300px;
   }
 
-  @supports (object-fit: cover) {
-    .topper__visual {
-      height: auto;
-      max-height: 480px;
-      @include oGridRespondTo(L) {
-        height: 600px;
-        max-height: 600px;
-      }
+  .topper__visual {
+    height: auto;
+    max-height: 480px;
+    @include oGridRespondTo(L) {
+      height: 600px;
+      max-height: 600px;
     }
   }
 }
