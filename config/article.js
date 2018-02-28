@@ -34,7 +34,7 @@ export default (environment = 'development') => ({
   mainImage: {
     title: '',
     description: '',
-    credit: '',
+    credit: 'Gazprom',
 
     // You can provide a UUID to an image and it was populate everything else
     uuid: 'c4bf0be4-7c15-11e4-a7b8-00144feabdc0',
