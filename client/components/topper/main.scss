@@ -212,3 +212,16 @@
     }
   }
 }
+
+.topper__video.small {
+  @include oGridRespondTo(S) {
+    display: none;
+  }
+}
+
+.topper__video.desktop {
+  display: none;
+  @include oGridRespondTo(S) {
+    display: block;
+  }
+}

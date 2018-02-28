@@ -41,7 +41,9 @@ export default (environment = 'development') => ({
 
     topper: {
       master:
-        'https://s3-eu-west-1.amazonaws.com/ft-ig-content-prod/v2/ft-interactive/gas-pipelines/video/pipeline.mp4',
+        'https://s3-eu-west-1.amazonaws.com/ft-ig-content-prod/v2/ft-interactive/gas-pipelines/video/drone-footage.mp4',
+      square:
+        'https://s3-eu-west-1.amazonaws.com/ft-ig-content-prod/v2/ft-interactive/gas-pipelines/video/drone-footage-square.mp4',
     },
 
     // You can also provide a URL
