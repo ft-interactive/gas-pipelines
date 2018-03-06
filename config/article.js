@@ -14,7 +14,7 @@ export default (environment = 'development') => ({
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Politics and the English Language',
+  headline: 'Russia’s biggest bet: a 3000km pipeline to tap China demand',
 
   // summary === standfirst (Summary is what the content API calls it)
   summary:

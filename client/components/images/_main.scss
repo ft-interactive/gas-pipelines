@@ -1,0 +1,17 @@
+.image-wide {
+  width: 100%;
+  @include oGridRespondTo(L) {
+    width: 120%;
+    position: relative;
+    left: -10%;
+  }
+  @include oGridRespondTo(XL) {
+    width: 140%;
+    position: relative;
+    left: -20%;
+  }
+}
+
+.image-default {
+  width: 100%;
+}

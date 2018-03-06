@@ -1,0 +1,32 @@
+.figures-block {
+  width: 100%;
+}
+
+.figures-block img {
+  width: 100%;
+}
+
+.figures-container {
+  background-color: #f2dfce;
+  font-family: MetricWeb, sans-serif;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: -5px;
+}
+
+.figures-container .figure {
+  font-size: 32px;
+}
+
+.figures-container .description {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.figures-container .o-grid-row div {
+  margin-top: 3px;
+  @include oGridRespondTo(S) {
+    margin-top: 0px;
+  }
+}
