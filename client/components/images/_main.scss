@@ -1,15 +1,47 @@
-.image-wide {
+.image-wide-container {
   width: 100%;
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 36px;
+
   @include oGridRespondTo(L) {
-    width: 120%;
-    position: relative;
-    left: -10%;
+    width: 100vw;
+    margin-left: -50vw;
+    left: calc(50% + 80px);
   }
+
   @include oGridRespondTo(XL) {
-    width: 140%;
-    position: relative;
-    left: -20%;
+    left: calc(50% + 140px);
   }
+}
+
+.image-wide-container figure {
+  margin: 0 auto 1em;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 100%;
+
+  @include oGridRespondTo(M) {
+    max-width: 740px;
+  }
+
+  @include oGridRespondTo(L) {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 980px;
+  }
+
+  @include oGridRespondTo(XL) {
+    max-width: 1220px;
+  }
+}
+
+.image-wide-container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .image-default {
