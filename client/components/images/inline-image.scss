@@ -1,0 +1,46 @@
+.inline-quote,
+.inline-image {
+  max-width: 100%;
+
+  @include oGridRespondTo(M) {
+    max-width: 50%;
+    float: left;
+    margin-right: 28px;
+  }
+
+  margin-bottom: 10px;
+}
+
+.inline-image img {
+  max-width: 100%;
+
+  @include oGridRespondTo(M) {
+    max-width: 100%;
+    float: left;
+    margin-right: 28px;
+    margin-bottom: 10px;
+  }
+}
+
+.inline-image .quote,
+.inline-quote .quote {
+  margin-bottom: 10px;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.inline-image .quote {
+  margin-top: 20px;
+}
+
+.inline-quote .quote {
+  margin-top: 0px;
+}
+
+.inline-quote .attribution,
+.inline-image .attribution {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
