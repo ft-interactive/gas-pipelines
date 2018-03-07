@@ -8,7 +8,6 @@
 .topper {
   //Basic topper uses the same grid columns as an article, so things can line up.
   @include articleGrid();
-  margin-bottom: 20px;
 
   @include oGridRespondTo($until: S) {
     padding-left: 0;

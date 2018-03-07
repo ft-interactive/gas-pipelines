@@ -1,0 +1,70 @@
+.image-fullwidth-container {
+  width: 100%;
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 36px;
+
+  @include oGridRespondTo(M) {
+    width: 100vw;
+    margin-left: -50vw;
+    left: calc(50%);
+  }
+
+  @include oGridRespondTo(L) {
+    left: calc(50% + 80px);
+  }
+
+  @include oGridRespondTo(XL) {
+    left: calc(50% + 140px);
+  }
+}
+
+.image-fullwidth-container figure {
+  margin: 0 auto 1em;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 100%;
+
+  @include oGridRespondTo(M) {
+    max-width: 740px;
+  }
+
+  @include oGridRespondTo($from: L, $until: XL) {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 980px;
+  }
+
+  @include oGridRespondTo(XL) {
+    max-width: none;
+  }
+}
+
+.image-fullwidth-container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.small-image {
+  display: none;
+  @include oGridRespondTo($until: S) {
+    display: block;
+  }
+}
+
+.medium-image {
+  display: none;
+  @include oGridRespondTo($from: S, $until: L) {
+    display: block;
+  }
+}
+
+.large-image {
+  display: none;
+  @include oGridRespondTo($from: L) {
+    display: block;
+  }
+}

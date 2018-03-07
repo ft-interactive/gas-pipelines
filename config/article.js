@@ -17,18 +17,16 @@ export default (environment = 'development') => ({
   headline: 'Russia’s biggest bet: a 3000km pipeline to tap China demand',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary:
-    'Political language is designed to make lies sound truthful' +
-    'and murder respectable, and to give an appearance of solidity to pure wind',
+  summary: 'Summary goes here...',
 
   topic: {
-    name: 'Starter Kit',
-    url: '/foo',
+    name: 'World',
+    url: '/world',
   },
 
   relatedArticle: {
-    text: 'Related article »',
-    url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
+    // text: 'Related article »',
+    // url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
   },
 
   mainImage: {
@@ -52,7 +50,7 @@ export default (environment = 'development') => ({
 
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
-  byline: [{ name: 'Author One', url: '/foo/bar' }, { name: 'Author Two' }],
+  byline: [{ name: 'Henry Foy', url: '/henry-foy' }],
 
   // Appears in the HTML <title>
   title: '',
