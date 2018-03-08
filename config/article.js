@@ -6,7 +6,7 @@ export default (environment = 'development') => ({
 
   // canonical URL of the published page
   //  get filled in by the ./configure script
-  url: '',
+  url: 'https://ig.ft.com/gazprom-pipeline-power-of-siberia/',
 
   googleDocId: '1VvOXK0_2FnTcXt-wUB0qFulUkxXl8IWbce57sGGp6OQ',
 
@@ -14,20 +14,20 @@ export default (environment = 'development') => ({
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Russia’s biggest bet: a 3000km pipeline to tap China demand',
+  headline: 'Russia’s $55bn pipeline gamble on China’s demand for gas',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Summary goes here...',
+  summary: 'Putin pivots to Beijing with biggest energy project since fall of Soviet Union',
 
   topic: {
     name: 'World',
     url: '/world',
   },
 
-  relatedArticle: {
-    // text: 'Related article »',
-    // url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
-  },
+  // relatedArticle: {
+  //   text: 'Related article »',
+  //   url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
+  // },
 
   mainImage: {
     title: '',
@@ -50,7 +50,7 @@ export default (environment = 'development') => ({
 
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
-  byline: [{ name: 'Henry Foy', url: '/henry-foy' }],
+  byline: [{ name: ' Henry Foy in Neryungri', url: '/henry-foy' }],
 
   // Appears in the HTML <title>
   title: '',

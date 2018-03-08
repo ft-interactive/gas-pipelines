@@ -46,6 +46,10 @@
   max-width: 100%;
 }
 
-.image-default {
+.image-default figure {
+  margin: 0 auto 1em;
+}
+
+.image-default img {
   width: 100%;
 }

@@ -4,13 +4,9 @@
   margin-top: 8px;
   margin-bottom: 36px;
 
-  @include oGridRespondTo(M) {
+  @include oGridRespondTo(L) {
     width: 100vw;
     margin-left: -50vw;
-    left: calc(50%);
-  }
-
-  @include oGridRespondTo(L) {
     left: calc(50% + 80px);
   }
 
@@ -31,14 +27,14 @@
     max-width: 740px;
   }
 
-  @include oGridRespondTo($from: L, $until: XL) {
+  @include oGridRespondTo(L) {
     padding-left: 20px;
     padding-right: 20px;
     max-width: 980px;
   }
 
   @include oGridRespondTo(XL) {
-    max-width: none;
+    max-width: 1220px;
   }
 }
 

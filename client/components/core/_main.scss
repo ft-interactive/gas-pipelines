@@ -36,6 +36,18 @@ body {
 
 .article-body {
   margin-top: -20px;
+
+  @include oGridRespondTo(M) {
+    margin-top: -30px;
+  }
+
+  @include oGridRespondTo(L) {
+    margin-top: -40px;
+  }
+}
+
+.o-grid-container.comments {
+  margin-top: 40px;
 }
 
 .graphic {
