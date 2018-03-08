@@ -50,7 +50,7 @@ export default (environment = 'development') => ({
 
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
-  byline: [{ name: ' Henry Foy in Neryungri', url: '/henry-foy' }],
+  byline: [{ name: ' Henry Foy', url: '/henry-foy', location: ' in Neryungri' }],
 
   // Appears in the HTML <title>
   title: '',
