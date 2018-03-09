@@ -72,7 +72,8 @@ export default (environment = 'development') => ({
         optional social meta data?
   */
   // General social
-  // socialImage: '',
+  socialImage:
+    'https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fs3-eu-west-1.amazonaws.com%2Fft-ig-content-prod%2Fv2%2Fft-interactive%2Fgas-pipelines%2Fmaster%2Fimages%2FAVD57499--98f57fe57ed6aeebe328bfe450ef1d60.jpg?source=ig',
   // socialHeadline: '',
   // socialDescription: '',
   // twitterCreator: '@author's_account', // shows up in summary_large_image cards
