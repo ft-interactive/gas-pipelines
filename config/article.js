@@ -21,7 +21,7 @@ export default (environment = 'development') => ({
 
   topic: {
     name: 'World',
-    url: '/world',
+    url: 'https://www.ft.com/world',
   },
 
   // relatedArticle: {
@@ -50,7 +50,7 @@ export default (environment = 'development') => ({
 
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
-  byline: [{ name: ' Henry Foy', url: '/henry-foy', location: ' in Neryungri' }],
+  byline: [{ name: ' Henry Foy', url: 'https://www.ft.com/henry-foy', location: ' in Neryungri' }],
 
   // Appears in the HTML <title>
   title: '',
