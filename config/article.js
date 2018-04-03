@@ -2,7 +2,7 @@ export default (environment = 'development') => ({
   // eslint-disable-line
 
   // link file UUID
-  id: '',
+  id: 'be4fb5fe-2227-11e8-9a70-08f715791301',
 
   // canonical URL of the published page
   //  get filled in by the ./configure script
