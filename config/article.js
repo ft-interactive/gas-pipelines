@@ -12,7 +12,7 @@ export default (environment = 'development') => ({
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
-  publishedDate: new Date(),
+  publishedDate: new Date('2018-04-03T05:02:22Z'),
 
   headline: 'Russia’s $55bn pipeline gamble on China’s demand for gas',
 
